@@ -26,13 +26,6 @@
             margin:auto;
         }
         
-        #button1 {
-            width:200px;
-            height:100px;
-            position:absolute;
-            left:50vw;
-            margin:50px;
-        }
     </style>
     
     <body>
@@ -40,8 +33,17 @@
         
         <div id="display">
             <button id="button">COOL STUFF PRESS TO CONTINUE</button>
-            <button id="button1">BETTER STUFF</button>
-        </div> 
+        </div>
+        <script>
+            var myBut = document.getElementById("button");
+            var disp = document.getElementById("display");
+            
+            myBut.onclick = function(){
+                myBut.style.width = "300px";
+                myBut.style.height = "300px";
+                disp.style.backgroundColor = "#BFE"
+            }
+        </script>
     </body>
 
 </html>
